@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>To Do List</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="stylesheet" href="jQuery/jquery-ui.min.css">
+<script src="jQuery/external/jquery/jquery.js"></script>
+<script src="jQuery/jquery-ui.min.js"></script>
+	</head>
+	<body>
+		<div id="container">
+			<header><h1>TO DO LIST</h1></header>
+			<nav>
+				<ul>
+					<li class="navButton" rel="yesterday"><a href="#">Yesterday</a></li>
+					<li class= "navButton active" rel="today"><a href="#">Today</a></li>
+					<li class="navButton" rel="tomorrow"><a href="#">Tomorrow</a></li>
+				</ul>
+			</nav>
+			<div class = "yesterday">
+				<ul class="list" id="yesterday">
+					<li><input type = "checkbox" id="cbox"><label for="cbox"></label>first</li>
+				</ul>
+			</div>
+			<div class = "today">
+				<ul class="list listActive " id="today">
+					<li><input type= "checkbox" id="cbox"><label for="cbox"></label>second</li>
+				</ul>
+			</div>
+			<div class = "tomorrow">
+				<ul class="list" id="tomorrow">
+					<li><input type= "checkbox" id="cbox"><label for="cbox"></label>third</li>
+				</ul>
+			</div>
+			<div class = "menu">
+				<label> Add Task:</label><input type="text" id="item"><br>
+				<label> Date complete:</label><input type="date" id="date"><br>
+				<input type="button" value="Add" id="addButton" >
+				<input type="button" value="Remove" id="removeButton" >
+			</div>
+
+		</div>
+		 
+		<script type="text/javascript" src="todo.js"></script>
+	</body>
+</html>
